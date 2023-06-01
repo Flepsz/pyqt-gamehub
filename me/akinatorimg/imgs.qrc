@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="aki_expressions">
+    <file>aki01.png</file>
+    <file>aki02.png</file>
+    <file>aki03.png</file>
+    <file>aki04.png</file>
+    <file>aki05.png</file>
+  </qresource>
+</RCC>
