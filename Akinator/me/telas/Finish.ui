@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Akinator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="principal">
@@ -38,17 +38,17 @@
     <widget class="QLabel" name="lbAki">
      <property name="geometry">
       <rect>
-       <x>470</x>
-       <y>110</y>
-       <width>241</width>
-       <height>291</height>
+       <x>480</x>
+       <y>100</y>
+       <width>201</width>
+       <height>301</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="akinatorimg/imgs.qrc">:/aki_expressions/aki01.png</pixmap>
+      <pixmap>akinatorimg/aki06.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -113,9 +113,9 @@ border: none;</string>
      <widget class="QLabel" name="lbName">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>50</x>
         <y>250</y>
-        <width>251</width>
+        <width>271</width>
         <height>21</height>
        </rect>
       </property>
@@ -202,8 +202,8 @@ QPushButton:hover {
     <widget class="QFrame" name="frame_2">
      <property name="geometry">
       <rect>
-       <x>490</x>
-       <y>130</y>
+       <x>470</x>
+       <y>110</y>
        <width>20</width>
        <height>20</height>
       </rect>
@@ -224,7 +224,7 @@ border-radius: 10px;</string>
      <property name="geometry">
       <rect>
        <x>510</x>
-       <y>170</y>
+       <y>130</y>
        <width>20</width>
        <height>20</height>
       </rect>

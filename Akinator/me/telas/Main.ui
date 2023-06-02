@@ -108,7 +108,7 @@ QPushButton:hover {
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="akinatorimg/imgs.qrc">:/aki_expressions/aki01.png</pixmap>
+      <pixmap>akinatorimg/aki01.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
