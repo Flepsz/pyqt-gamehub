@@ -9,7 +9,7 @@ from akinator import (
 )
 
 
-async def test() -> None:
+async def test():
     # create akinator instance
     aki = AsyncAkinator(
         child_mode=True,
