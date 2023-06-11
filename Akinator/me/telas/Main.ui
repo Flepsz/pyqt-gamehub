@@ -23,7 +23,7 @@
    <bool>false</bool>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Akinator</string>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -138,9 +138,9 @@ border-radius: 40px;</string>
       <property name="geometry">
        <rect>
         <x>30</x>
-        <y>20</y>
+        <y>10</y>
         <width>301</width>
-        <height>51</height>
+        <height>71</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -149,6 +149,12 @@ border: none;</string>
       </property>
       <property name="text">
        <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>

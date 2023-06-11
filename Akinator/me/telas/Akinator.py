@@ -9,7 +9,6 @@ class Janela:
         self.tela_inicial = uic.loadUi("Start.ui")
         self.tela_principal = uic.loadUi("Main.ui")
         self.tela_inicial.show()
-        self.answer = ''
 
         self.akinator = Akinator(child_mode=True, theme=Theme.from_str('characters'))
 

@@ -35,25 +35,6 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="lbAki">
-     <property name="geometry">
-      <rect>
-       <x>480</x>
-       <y>100</y>
-       <width>201</width>
-       <height>301</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="pixmap">
-      <pixmap>akinatorimg/aki06.png</pixmap>
-     </property>
-     <property name="scaledContents">
-      <bool>true</bool>
-     </property>
-    </widget>
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
@@ -165,39 +146,6 @@ border: none;</string>
        <set>Qt::AlignCenter</set>
       </property>
      </widget>
-    </widget>
-    <widget class="QPushButton" name="btnPlayAgn">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>430</y>
-       <width>161</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton {
-  	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
-	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
-	cursor: pointer;
-	font-family: 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 15px;
-	cursor: pointer;
-}
-
-QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
-}</string>
-     </property>
-     <property name="text">
-      <string>Play Again</string>
-     </property>
     </widget>
     <widget class="QFrame" name="frame_2">
      <property name="geometry">
@@ -492,13 +440,31 @@ border-radius: 10px;</string>
       </property>
      </widget>
     </widget>
+    <widget class="QLabel" name="lbAki_2">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>120</y>
+       <width>221</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/aki05.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
     <zorder>lbRoom</zorder>
-    <zorder>lbAki</zorder>
     <zorder>frame</zorder>
-    <zorder>btnPlayAgn</zorder>
     <zorder>frame_2</zorder>
     <zorder>frame_3</zorder>
     <zorder>principal_2</zorder>
+    <zorder>lbAki_2</zorder>
    </widget>
   </widget>
  </widget>
