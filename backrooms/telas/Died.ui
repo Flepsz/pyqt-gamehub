@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>The Backrooms</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/Die.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playagnBtn">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>340</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#playagnBtn {
+	border: 2px solid #810D0D;
+	border-radius: 10px;
+	background-color: #1C1C21;
+	font: 750 20pt &quot;Century Gothic&quot;;
+	color: #810D0D;
+}
+
+#playagnBtn:hover {
+	transition: 0.3s;
+	color: #fff;
+	background-color: #810D0D;
+	border-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>PLAY AGAIN</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
