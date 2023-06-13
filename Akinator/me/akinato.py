@@ -105,7 +105,6 @@ class AkinatorGUI:
         self.worker.finished.connect(self.worker_finished)
         self.worker.start()
 
-        self.timer.start(0)
 
     def handle_yes(self):
         self.worker.set_answer('yes')
@@ -120,7 +119,7 @@ class AkinatorGUI:
         self.worker.set_answer('probably')
 
     def handle_pn(self):
-        self.worker.set_answer('probably_not')
+        self.worker.set_answer('probably not')
 
     def handle_bk(self):
         self.worker.set_back_button_pressed()
