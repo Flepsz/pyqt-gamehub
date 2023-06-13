@@ -76,9 +76,9 @@ class AkinatorWorker(QtCore.QThread):
 class AkinatorGUI:
     def __init__(self):
         app = QtWidgets.QApplication([])
-        self.tela_inicial = uic.loadUi("Start.ui")
-        self.tela_principal = uic.loadUi("Main.ui")
-        self.tela_finish = uic.loadUi("Finish.ui")
+        self.tela_inicial = uic.loadUi("./telas/Start.ui")
+        self.tela_principal = uic.loadUi("./telas/Main.ui")
+        self.tela_finish = uic.loadUi("./telas/Finish.ui")
         self.tela_inicial.show()
 
         self.tela_inicial.btnPlay.clicked.connect(self.play_game)
