@@ -1,6 +1,7 @@
 import asyncio
 import requests
 from PyQt5 import QtWidgets, uic, QtGui, QtCore
+from PyQt5.QtCore import QTimer
 
 from akinator import (
     CantGoBackAnyFurther,
@@ -22,6 +23,11 @@ class AkinatorWorker(QtCore.QThread):
         self.answer = None
         self.back_button_pressed = False
 
+    def while_thread(self, func):
+            self.timer = QTimer()
+            self.timer.start(1)
+            self.timer.timeout.connect(func)
+
     def run(self):
         self.loop = asyncio.new_event_loop()
         asyncio.set_event_loop(self.loop)
@@ -36,25 +42,28 @@ class AkinatorWorker(QtCore.QThread):
         first_question = await self.aki.start_game()
         self.update_question_signal.emit(first_question)
 
-        while self.aki.progression <= 80:
-            if self.answer == 'back':
-                try:
-                    await self.aki.back()
-                    print('went back 1 question')
-                except CantGoBackAnyFurther:
-                    print('cannot go back any further!')
-            else:
-                if self.answer is not None:
+        def testgame():
+            if self.aki.progression <= 80:
+                if self.back_button_pressed:
+                    self.back_button_pressed = False
                     try:
-                        answer = Answer.from_str(self.answer)
-                    except InvalidAnswer:
-                        print('Invalid answer')
-                    else:
-                        await self.aki.answer(answer)
-                    self.answer = None
+                        print('went back 1 question')
+                    except CantGoBackAnyFurther:
+                        print('cannot go back any further!')
+                else:
+                    if self.answer is not None:
+                        try:
+                            answer = Answer.from_str(self.answer)
+                        except InvalidAnswer:
+                            print('Invalid answer')
+                        else:
+                            await self.aki.answer(answer)
+                        self.answer = None
 
-            next_question = self.aki.question
-            self.update_question_signal.emit(next_question)
+                next_question = self.aki.question
+                self.update_question_signal.emit(next_question)
+
+        self.while_thread(testgame)
 
         first_guess = await self.aki.win()
         if first_guess:
@@ -62,6 +71,9 @@ class AkinatorWorker(QtCore.QThread):
 
     def set_answer(self, answer):
         self.answer = answer
+
+    def set_back_button_pressed(self):
+        self.back_button_pressed = True
 
     def download_image(self, url):
         response = requests.get(url)
@@ -118,7 +130,7 @@ class AkinatorGUI:
         self.worker.set_answer('probably not')
 
     def handle_bk(self):
-        self.worker.set_answer('back')
+        self.worker.set_back_button_pressed()
 
     def update_question(self, question):
         self.tela_principal.lbQuestion.setText(question)

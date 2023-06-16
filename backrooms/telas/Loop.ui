@@ -39,7 +39,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="tohomeBtn">
+   <widget class="QPushButton" name="homeBtn">
     <property name="geometry">
      <rect>
       <x>150</x>

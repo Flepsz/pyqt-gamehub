@@ -33,26 +33,26 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../img/Tunnel37.png</pixmap>
+     <pixmap>../img/ultl.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="nextBtn">
+   <widget class="QPushButton" name="escapeBtn">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>200</y>
-      <width>71</width>
-      <height>71</height>
+      <x>130</x>
+      <y>120</y>
+      <width>121</width>
+      <height>251</height>
      </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
     </property>
    </widget>
   </widget>
