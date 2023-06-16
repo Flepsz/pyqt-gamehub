@@ -33,20 +33,42 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../img/Home37.gif</pixmap>
+     <pixmap>../img/ultl (1).gif</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="totunnelBtn">
+   <widget class="QPushButton" name="keyBtn">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>240</y>
-      <width>51</width>
-      <height>41</height>
+      <x>220</x>
+      <y>300</y>
+      <width>21</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
+     <cursorShape>WhatsThisCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="keyBtn_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>420</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>WhatsThisCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>

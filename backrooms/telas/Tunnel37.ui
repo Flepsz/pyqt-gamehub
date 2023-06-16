@@ -33,16 +33,16 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../img/Home37.gif</pixmap>
+     <pixmap>../img/Tunnel37.png</pixmap>
     </property>
    </widget>
    <widget class="QPushButton" name="totunnelBtn">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>240</y>
-      <width>51</width>
-      <height>41</height>
+      <x>170</x>
+      <y>200</y>
+      <width>71</width>
+      <height>71</height>
      </rect>
     </property>
     <property name="cursor">

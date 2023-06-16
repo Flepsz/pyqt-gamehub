@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -33,16 +36,38 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../img/Home37.gif</pixmap>
+     <pixmap>../img/Poolrooms-4 2.gif</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="totunnelBtn">
+   <widget class="QPushButton" name="totunnelBtn_2">
     <property name="geometry">
      <rect>
-      <x>230</x>
-      <y>240</y>
+      <x>140</x>
+      <y>190</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tokeyBtn">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>180</y>
       <width>51</width>
-      <height>41</height>
+      <height>91</height>
      </rect>
     </property>
     <property name="cursor">

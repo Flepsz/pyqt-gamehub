@@ -37,8 +37,7 @@ class AkinatorWorker(QtCore.QThread):
         self.update_question_signal.emit(first_question)
 
         while self.aki.progression <= 80:
-            if self.back_button_pressed:
-                self.back_button_pressed = False
+            if self.answer == 'back':
                 try:
                     await self.aki.back()
                     print('went back 1 question')
@@ -63,9 +62,6 @@ class AkinatorWorker(QtCore.QThread):
 
     def set_answer(self, answer):
         self.answer = answer
-
-    def set_back_button_pressed(self):
-        self.back_button_pressed = True
 
     def download_image(self, url):
         response = requests.get(url)
@@ -122,7 +118,7 @@ class AkinatorGUI:
         self.worker.set_answer('probably not')
 
     def handle_bk(self):
-        self.worker.set_back_button_pressed()
+        self.worker.set_answer('back')
 
     def update_question(self, question):
         self.tela_principal.lbQuestion.setText(question)
