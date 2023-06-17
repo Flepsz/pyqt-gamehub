@@ -98,10 +98,10 @@ QPushButton:hover {
     <widget class="QLabel" name="lbAki">
      <property name="geometry">
       <rect>
-       <x>470</x>
-       <y>110</y>
-       <width>241</width>
-       <height>291</height>
+       <x>490</x>
+       <y>140</y>
+       <width>201</width>
+       <height>261</height>
       </rect>
      </property>
      <property name="text">
@@ -179,21 +179,27 @@ border: none;</string>
         <property name="styleSheet">
          <string notr="true">QPushButton {
   	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
 	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
+ 	color: #44321e;
 	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
+	transition: background-color 0.3s ease;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
 }</string>
         </property>
         <property name="text">
@@ -212,21 +218,27 @@ QPushButton:hover {
         <property name="styleSheet">
          <string notr="true">QPushButton {
   	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
 	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
+ 	color: #44321e;
 	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
+	transition: background-color 0.3s ease;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
 }</string>
         </property>
         <property name="text">
@@ -245,21 +257,27 @@ QPushButton:hover {
         <property name="styleSheet">
          <string notr="true">QPushButton {
   	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
 	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
+ 	color: #44321e;
 	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
+	transition: background-color 0.3s ease;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
 }</string>
         </property>
         <property name="text">
@@ -278,25 +296,31 @@ QPushButton:hover {
         <property name="styleSheet">
          <string notr="true">QPushButton {
   	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
 	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
+ 	color: #44321e;
 	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
+	transition: background-color 0.3s ease;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
 }</string>
         </property>
         <property name="text">
-         <string>Probably</string>
+         <string>Probably Yes</string>
         </property>
        </widget>
       </item>
@@ -311,21 +335,27 @@ QPushButton:hover {
         <property name="styleSheet">
          <string notr="true">QPushButton {
   	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
 	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
+ 	color: #44321e;
 	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
+	transition: background-color 0.3s ease;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
 }</string>
         </property>
         <property name="text">
@@ -347,21 +377,27 @@ QPushButton:hover {
      <property name="styleSheet">
       <string notr="true">QPushButton {
   	align-items: center;
-  	background-color: #4849EF;
-	border: 1px solid #212151;
-  	border-radius: 6px;
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
 	box-sizing: border-box;
- 	color: rgb(255, 255, 255);
+ 	color: #44321e;
 	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: 1s;
-	background-color:  #181847;
+	transition: background-color 0.3s ease;
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
 }</string>
      </property>
      <property name="text">

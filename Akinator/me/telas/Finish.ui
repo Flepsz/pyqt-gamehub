@@ -443,8 +443,8 @@ border-radius: 10px;</string>
     <widget class="QLabel" name="lbAki_2">
      <property name="geometry">
       <rect>
-       <x>490</x>
-       <y>120</y>
+       <x>470</x>
+       <y>130</y>
        <width>221</width>
        <height>271</height>
       </rect>
