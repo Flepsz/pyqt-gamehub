@@ -36,7 +36,7 @@
      <pixmap>../img/Arrows.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="escapearrBtn">
+   <widget class="QPushButton" name="escapeBtn">
     <property name="geometry">
      <rect>
       <x>580</x>
@@ -55,7 +55,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="backarrBtn">
+   <widget class="QPushButton" name="backBtn">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -74,7 +74,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="todieBtn">
+   <widget class="QPushButton" name="dieBtn">
     <property name="geometry">
      <rect>
       <x>290</x>
