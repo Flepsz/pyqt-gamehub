@@ -36,7 +36,7 @@
      <pixmap>../img/Exit 1 lvl.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="ExitBtn">
+   <widget class="QPushButton" name="exitBtn">
     <property name="geometry">
      <rect>
       <x>340</x>

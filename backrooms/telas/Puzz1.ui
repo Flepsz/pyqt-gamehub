@@ -36,7 +36,7 @@
      <pixmap>../img/Puzz1.png</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="ExitBtn">
+   <widget class="QPushButton" name="exitBtn">
     <property name="geometry">
      <rect>
       <x>0</x>
