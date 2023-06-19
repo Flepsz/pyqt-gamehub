@@ -54,36 +54,7 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string>QPushButton {
-  align-items: center;
-  background-color: rgb(238, 139, 0);
-  border-radius: 6px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s,-webkit-box-shadow .2s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  touch-action: manipulation;
-}
-
-QPushButton:hover {
-	box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
-}</string>
+      <string notr="true"/>
      </property>
      <property name="text">
       <string/>
@@ -158,213 +129,6 @@ border: none;</string>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="verticalLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>200</y>
-       <width>321</width>
-       <height>221</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="btns_anws">
-      <item>
-       <widget class="QPushButton" name="btnYes">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>35</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-  	align-items: center;
-  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
-    stop: 0 rgba(169, 139, 93, 1),
-    stop: 0.30 rgba(223, 193, 132, 1),
-    stop: 1 rgba(237, 212, 162, 1));
-	border-left: 4px solid #44321e;
-	border-right: 4px solid #44321e;
-	border-radius:1px;
-	box-sizing: border-box;
- 	color: #44321e;
-	cursor: pointer;
-	font-family: 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	cursor: pointer;
-}
-
-QPushButton:hover {
-	transition: background-color 0.3s ease;
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-    stop: 0.13 rgba(139, 114, 76, 1),
-    stop: 0.51 rgba(169, 139, 93, 1));
-}</string>
-        </property>
-        <property name="text">
-         <string>Yes</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnNo">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>35</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-  	align-items: center;
-  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
-    stop: 0 rgba(169, 139, 93, 1),
-    stop: 0.30 rgba(223, 193, 132, 1),
-    stop: 1 rgba(237, 212, 162, 1));
-	border-left: 4px solid #44321e;
-	border-right: 4px solid #44321e;
-	border-radius:1px;
-	box-sizing: border-box;
- 	color: #44321e;
-	cursor: pointer;
-	font-family: 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	cursor: pointer;
-}
-
-QPushButton:hover {
-	transition: background-color 0.3s ease;
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-    stop: 0.13 rgba(139, 114, 76, 1),
-    stop: 0.51 rgba(169, 139, 93, 1));
-}</string>
-        </property>
-        <property name="text">
-         <string>No</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnIdk">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>35</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-  	align-items: center;
-  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
-    stop: 0 rgba(169, 139, 93, 1),
-    stop: 0.30 rgba(223, 193, 132, 1),
-    stop: 1 rgba(237, 212, 162, 1));
-	border-left: 4px solid #44321e;
-	border-right: 4px solid #44321e;
-	border-radius:1px;
-	box-sizing: border-box;
- 	color: #44321e;
-	cursor: pointer;
-	font-family: 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	cursor: pointer;
-}
-
-QPushButton:hover {
-	transition: background-color 0.3s ease;
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-    stop: 0.13 rgba(139, 114, 76, 1),
-    stop: 0.51 rgba(169, 139, 93, 1));
-}</string>
-        </property>
-        <property name="text">
-         <string>I Don't Know</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnPs">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>35</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-  	align-items: center;
-  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
-    stop: 0 rgba(169, 139, 93, 1),
-    stop: 0.30 rgba(223, 193, 132, 1),
-    stop: 1 rgba(237, 212, 162, 1));
-	border-left: 4px solid #44321e;
-	border-right: 4px solid #44321e;
-	border-radius:1px;
-	box-sizing: border-box;
- 	color: #44321e;
-	cursor: pointer;
-	font-family: 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	cursor: pointer;
-}
-
-QPushButton:hover {
-	transition: background-color 0.3s ease;
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-    stop: 0.13 rgba(139, 114, 76, 1),
-    stop: 0.51 rgba(169, 139, 93, 1));
-}</string>
-        </property>
-        <property name="text">
-         <string>Probably Yes</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnPn">
-        <property name="minimumSize">
-         <size>
-          <width>100</width>
-          <height>35</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-  	align-items: center;
-  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
-    stop: 0 rgba(169, 139, 93, 1),
-    stop: 0.30 rgba(223, 193, 132, 1),
-    stop: 1 rgba(237, 212, 162, 1));
-	border-left: 4px solid #44321e;
-	border-right: 4px solid #44321e;
-	border-radius:1px;
-	box-sizing: border-box;
- 	color: #44321e;
-	cursor: pointer;
-	font-family: 'Arial', sans-serif;
-	font-weight: 700;
-	font-size: 17px;
-	cursor: pointer;
-}
-
-QPushButton:hover {
-	transition: background-color 0.3s ease;
-	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-    stop: 0.13 rgba(139, 114, 76, 1),
-    stop: 0.51 rgba(169, 139, 93, 1));
-}</string>
-        </property>
-        <property name="text">
-         <string>Probably Not</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
     <widget class="QPushButton" name="btnBack">
      <property name="geometry">
       <rect>
@@ -374,9 +138,11 @@ QPushButton:hover {
        <height>31</height>
       </rect>
      </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-  	align-items: center;
   	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
     stop: 0 rgba(169, 139, 93, 1),
     stop: 0.30 rgba(223, 193, 132, 1),
@@ -384,17 +150,13 @@ QPushButton:hover {
 	border-left: 4px solid #44321e;
 	border-right: 4px solid #44321e;
 	border-radius:1px;
-	box-sizing: border-box;
  	color: #44321e;
-	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 700;
 	font-size: 17px;
-	cursor: pointer;
 }
 
 QPushButton:hover {
-	transition: background-color 0.3s ease;
 	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
     stop: 0.13 rgba(139, 114, 76, 1),
     stop: 0.51 rgba(169, 139, 93, 1));
@@ -446,6 +208,508 @@ border-radius: 10px;</string>
       <enum>QFrame::Raised</enum>
      </property>
     </widget>
+    <widget class="QPushButton" name="btnPn">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>380</y>
+       <width>329</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
+ 	color: #44321e;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+QPushButton:hover {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
+}</string>
+     </property>
+     <property name="text">
+      <string>Probably Not</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnNo">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>242</y>
+       <width>329</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
+ 	color: #44321e;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+QPushButton:hover {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
+}</string>
+     </property>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnYes">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>196</y>
+       <width>329</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
+ 	color: #44321e;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+QPushButton:hover {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
+}</string>
+     </property>
+     <property name="text">
+      <string>Yes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnIdk">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>288</y>
+       <width>329</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
+ 	color: #44321e;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+QPushButton:hover {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
+}</string>
+     </property>
+     <property name="text">
+      <string>I Don't Know</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnPs">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>334</y>
+       <width>329</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>100</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+  	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
+    stop: 0 rgba(169, 139, 93, 1),
+    stop: 0.30 rgba(223, 193, 132, 1),
+    stop: 1 rgba(237, 212, 162, 1));
+	border-left: 4px solid #44321e;
+	border-right: 4px solid #44321e;
+	border-radius:1px;
+ 	color: #44321e;
+	font-family: 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+QPushButton:hover {
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+    stop: 0.13 rgba(139, 114, 76, 1),
+    stop: 0.51 rgba(169, 139, 93, 1));
+}</string>
+     </property>
+     <property name="text">
+      <string>Probably Yes</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>464</x>
+       <y>192</y>
+       <width>21</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>192</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>463</x>
+       <y>238</y>
+       <width>21</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>123</x>
+       <y>238</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>449</x>
+       <y>512</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>789</x>
+       <y>512</y>
+       <width>21</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>284</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>465</x>
+       <y>284</y>
+       <width>21</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>465</x>
+       <y>331</y>
+       <width>21</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>331</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>464</x>
+       <y>377</y>
+       <width>21</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>124</x>
+       <y>377</y>
+       <width>21</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>lbRoom</zorder>
+    <zorder>lbAki</zorder>
+    <zorder>frame</zorder>
+    <zorder>btnBack</zorder>
+    <zorder>frame_2</zorder>
+    <zorder>frame_3</zorder>
+    <zorder>btnYes</zorder>
+    <zorder>btnNo</zorder>
+    <zorder>btnIdk</zorder>
+    <zorder>btnPs</zorder>
+    <zorder>btnPn</zorder>
+    <zorder>label_7</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_8</zorder>
+    <zorder>label_9</zorder>
+    <zorder>label_10</zorder>
+    <zorder>label_11</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_13</zorder>
+    <zorder>label_14</zorder>
+    <zorder>label_15</zorder>
+    <zorder>label_16</zorder>
+    <zorder>label_17</zorder>
    </widget>
   </widget>
  </widget>

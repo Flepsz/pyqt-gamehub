@@ -36,36 +36,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string>QPushButton {
-  align-items: center;
-  background-color: rgb(238, 139, 0);
-  border-radius: 6px;
-  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  display: inline-flex;
-  flex: 1 1 auto;
-  font-family: Inter,sans-serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1;
-  margin: 0;
-  outline: none;
-  padding: 1rem 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  transition: box-shadow .2s,-webkit-box-shadow .2s;
-  white-space: nowrap;
-  border: 0;
-  user-select: none;
-  touch-action: manipulation;
-}
-
-QPushButton:hover {
-	box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
-}</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -108,8 +79,8 @@ QPushButton:hover {
     <property name="styleSheet">
      <string notr="true">QFrame {
 	background-color: rgb(255, 255, 255);
-	border: 2px solid rgb(129, 205, 240);
-	border-radius: 10px;
+	border: 2px solid #44321e;
+	border-radius: 3px;
 }</string>
     </property>
     <property name="frameShape">
@@ -152,14 +123,16 @@ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;</string>
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>130</y>
-       <width>191</width>
-       <height>61</height>
+       <y>140</y>
+       <width>201</width>
+       <height>51</height>
       </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
      </property>
      <property name="styleSheet">
       <string notr="true">QPushButton {
-  	align-items: center;
   	background: qlineargradient(x1: 0, y1: 1, x2: 0, y2: 0,
     stop: 0 rgba(169, 139, 93, 1),
     stop: 0.30 rgba(223, 193, 132, 1),
@@ -167,15 +140,10 @@ text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;</string>
 	border-left: 4px solid #44321e;
 	border-right: 4px solid #44321e;
 	border-radius:1px;
-	box-sizing: border-box;
  	color: #44321e;
-	cursor: pointer;
 	font-family: 'Arial', sans-serif;
 	font-weight: 800;
 	font-size: 20px;
-	cursor: pointer;
-	transition-property: background-color;
-	transition-duration: 1s;
 }
 
 QPushButton:hover {
@@ -208,6 +176,50 @@ QPushButton:hover {
      </property>
      <property name="text">
       <string>By: Flepsz</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>36</x>
+       <y>140</y>
+       <width>21</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/left.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>140</y>
+       <width>21</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: none;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>akinatorimg/right.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
      </property>
     </widget>
    </widget>

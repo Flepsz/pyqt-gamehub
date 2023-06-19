@@ -1,10 +1,8 @@
 import asyncio
 import requests
 from PyQt5 import QtWidgets, uic, QtGui, QtCore
-from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QVBoxLayout
-import sys
 import random
 
 from akinator import (
