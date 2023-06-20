@@ -18,10 +18,14 @@ class Backrooms:
         self.paper_sound = None
         self.parabens37_sound = None
         self.parabens_sound = None
-        self.has_key = False
         self.key_sound = None
 
+        self.jumpscares = 0
         self.loop_times = 1
+        self.times_locker = 0
+        self.times_key = 0
+        self.has_key = False
+        self.times_door = 0
 
         # Carregar a música de fundo
         self.player = QtMultimedia.QMediaPlayer()
@@ -37,7 +41,7 @@ class Backrooms:
         self.tl_menu = uic.loadUi("./telas/Menu.ui")
         self.tl_menu.startBtn.clicked.connect(lambda: changetl(self.tl_menu, self.tl_home))
         self.tl_menu.quitBtn.clicked.connect(app.quit)
-        self.tl_menu.show()
+        # self.tl_menu.show()
 
         # Home
         self.tl_home = uic.loadUi("./telas/Home.ui")
@@ -123,6 +127,7 @@ class Backrooms:
         self.tl_bi37.tokeyBtn.clicked.connect(self.chk_key)
         self.tl_bi37.toexitBtn.clicked.connect(lambda: changetl(self.tl_bi37, self.tl_door37))
         self.tl_bi37.backBtn.clicked.connect(lambda: changetl(self.tl_bi37, self.tl_tunnel37))
+        self.tl_bi37.show()
 
         # Key37
         self.tl_key37 = uic.loadUi("./telas/Key37.ui")
@@ -140,7 +145,7 @@ class Backrooms:
 
         # wrong alert Door 37
         self.tl_door37wrng = uic.loadUi("./telas/Door37wng.ui")
-        self.tl_door37wrng.okBtn.clicked.connect(lambda : changetl(self.tl_door37wrng, self.tl_door37))
+        self.tl_door37wrng.okBtn.clicked.connect(lambda: changetl(self.tl_door37wrng, self.tl_door37))
 
         # Cangrats Window
         self.tl_congrats = uic.loadUi("./telas/Congrats.ui")
@@ -182,22 +187,30 @@ class Backrooms:
         self.parabens37_sound.setMedia(QtMultimedia.QMediaContent(QUrl.fromLocalFile("./img/fx/parabens37.wav")))
 
     def show_jumpscare(self):
+        self.jumpscares += 1
         self.sounds()
         self.scream_sound.play()
-        self.tl_home.close()
-        self.tl_Scare.show()
-        QtCore.QTimer.singleShot(1000, self.close_jumscare)
+        if self.jumpscares == 3:
+            self.dietl(self.tl_home)
+        else:
+            self.tl_home.close()
+            self.tl_Scare.show()
+            QtCore.QTimer.singleShot(1000, self.close_jumscare)
 
     def close_jumscare(self):
         self.tl_Scare.close()
         self.tl_home.show()
 
     def show_jumpscare1(self):
+        self.jumpscares += 1
         self.sounds()
         self.scream_sound.play()
-        self.tl_home2.close()
-        self.tl_Scare1.show()
-        QtCore.QTimer.singleShot(1000, self.close_jumscare1)
+        if self.jumpscares == 3:
+            self.dietl(self.tl_home)
+        else:
+            self.tl_home2.close()
+            self.tl_Scare1.show()
+            QtCore.QTimer.singleShot(1000, self.close_jumscare1)
 
     def close_jumscare1(self):
         self.tl_Scare1.close()
@@ -210,8 +223,12 @@ class Backrooms:
         self.tl_die.show()
 
     def plyagn(self):
+        self.jumpscares = 0
         self.loop_times = 1
+        self.times_locker = 0
+        self.times_key = 0
         self.has_key = False
+        self.times_door = 0
         changetl(self.tl_die, self.tl_menu)
 
     def loop_chk(self, window):
@@ -247,9 +264,15 @@ class Backrooms:
             self.correct_sound.play()
             changetl(self.tl_locker, self.tl_dooracpt)
         else:
-            self.sounds()
-            self.error_sound.play()
-            changetl(self.tl_locker, self.tl_lockerwrng)
+            self.times_locker += 1
+            if self.times_locker == 3:
+                self.sounds()
+                self.scream_sound.play()
+                self.dietl(self.tl_door)
+            else:
+                self.sounds()
+                self.error_sound.play()
+                changetl(self.tl_locker, self.tl_lockerwrng)
 
     def exit(self):
         self.sounds()
@@ -266,12 +289,16 @@ class Backrooms:
         self.tl_wtkey37.show()
 
     def chk_key(self):
-        if self.has_key:
-            self.tl_bi37.close()
-            self.tl_wtkey37.show()
+        self.times_key += 1
+        if self.times_key == 3:
+            if self.has_key:
+                self.tl_bi37.close()
+                self.tl_wtkey37.show()
+            else:
+                self.tl_bi37.close()
+                self.tl_key37.show()
         else:
-            self.tl_bi37.close()
-            self.tl_key37.show()
+            self.dietl(self.tl_bi37)
 
     def chk_key_door(self):
         if self.has_key:
@@ -280,8 +307,12 @@ class Backrooms:
             self.sounds()
             self.parabens37_sound.play()
         else:
-            self.tl_door37.close()
-            self.tl_door37wrng.show()
+            self.times_door += 1
+            if self.times_door == 3:
+                self.dietl(self.tl_door37)
+            else:
+                self.tl_door37.close()
+                self.tl_door37wrng.show()
 
     def change_music(self):
         # Parar a música atual
