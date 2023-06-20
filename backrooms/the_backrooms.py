@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, uic, QtMultimedia, QtCore
-from PyQt5.QtCore import QUrl
+from PyQt5.QtCore import QUrl, QThread
 
 
 def changetl(tohide, toshow):
@@ -19,6 +19,7 @@ class Backrooms:
         self.parabens37_sound = None
         self.parabens_sound = None
         self.key_sound = None
+        self.op_sound = None
 
         self.jumpscares = 0
         self.loop_times = 1
@@ -26,6 +27,7 @@ class Backrooms:
         self.times_key = 0
         self.has_key = False
         self.times_door = 0
+        self.wilso = False
 
         # Carregar a música de fundo
         self.player = QtMultimedia.QMediaPlayer()
@@ -41,7 +43,7 @@ class Backrooms:
         self.tl_menu = uic.loadUi("./telas/Menu.ui")
         self.tl_menu.startBtn.clicked.connect(lambda: changetl(self.tl_menu, self.tl_home))
         self.tl_menu.quitBtn.clicked.connect(app.quit)
-        # self.tl_menu.show()
+        self.tl_menu.show()
 
         # Home
         self.tl_home = uic.loadUi("./telas/Home.ui")
@@ -73,6 +75,7 @@ class Backrooms:
         self.tl_arrows.backBtn.clicked.connect(lambda: changetl(self.tl_arrows, self.tl_home2))
         self.tl_arrows.escapeBtn.clicked.connect(lambda: changetl(self.tl_arrows, self.tl_toDoor))
         self.tl_arrows.dieBtn.clicked.connect(lambda: self.dietl(self.tl_arrows))
+        self.tl_arrows.wilsoBtn.clicked.connect(self.wilsomain)
 
         # Die
         self.tl_die = uic.loadUi("./telas/Died.ui")
@@ -127,7 +130,6 @@ class Backrooms:
         self.tl_bi37.tokeyBtn.clicked.connect(self.chk_key)
         self.tl_bi37.toexitBtn.clicked.connect(lambda: changetl(self.tl_bi37, self.tl_door37))
         self.tl_bi37.backBtn.clicked.connect(lambda: changetl(self.tl_bi37, self.tl_tunnel37))
-        self.tl_bi37.show()
 
         # Key37
         self.tl_key37 = uic.loadUi("./telas/Key37.ui")
@@ -151,7 +153,35 @@ class Backrooms:
         self.tl_congrats = uic.loadUi("./telas/Congrats.ui")
         self.tl_congrats.exitBtn.clicked.connect(app.quit)
 
+        self.tl_wilso1 = uic.loadUi("./telas/wilso1.ui")
+        self.tl_wilso1.noBtn.clicked.connect(self.nowilso)
+
+        self.tl_wilso2 = uic.loadUi("./telas/wilso2.ui")
+        self.tl_wilso2.wilsoBtn.clicked.connect(self.exitwilso)
+
         app.exec()
+
+    def wilsomain(self):
+        if self.wilso:
+            self.tl_arrows.close()
+            self.tl_wilso2.show()
+            self.sounds()
+            self.op_sound.play()
+        else:
+            self.sounds()
+            self.op_sound.play()
+            changetl(self.tl_arrows, self.tl_wilso1)
+            self.wilso = True
+
+    def nowilso(self):
+        self.sounds()
+        changetl(self.tl_wilso1, self.tl_arrows)
+        self.op_sound.stop()
+
+    def exitwilso(self):
+        self.sounds()
+        self.op_sound.stop()
+        self.dietl(self.tl_wilso2)
         
     def sounds(self):
         # Scream
@@ -185,6 +215,11 @@ class Backrooms:
         # Parabeinsz
         self.parabens37_sound = QtMultimedia.QMediaPlayer()
         self.parabens37_sound.setMedia(QtMultimedia.QMediaContent(QUrl.fromLocalFile("./img/fx/parabens37.wav")))
+
+        # Wilso OST
+        self.op_sound = QtMultimedia.QMediaPlayer()
+        self.op_sound.setMedia(QtMultimedia.QMediaContent(QUrl.fromLocalFile("./img/fx/wilso.wav")))
+        self.op_sound.setVolume(60)
 
     def show_jumpscare(self):
         self.jumpscares += 1
@@ -260,10 +295,12 @@ class Backrooms:
     def test_password(self):
         senha = self.tl_locker.senhaLe.text()
         if senha == "555":
+            self.tl_locker.senhaLe.clear()
             self.sounds()
             self.correct_sound.play()
             changetl(self.tl_locker, self.tl_dooracpt)
         else:
+            self.tl_locker.senhaLe.clear()
             self.times_locker += 1
             if self.times_locker == 3:
                 self.sounds()
@@ -291,14 +328,14 @@ class Backrooms:
     def chk_key(self):
         self.times_key += 1
         if self.times_key == 3:
+            self.dietl(self.tl_bi37)
+        else:
             if self.has_key:
                 self.tl_bi37.close()
                 self.tl_wtkey37.show()
             else:
                 self.tl_bi37.close()
                 self.tl_key37.show()
-        else:
-            self.dietl(self.tl_bi37)
 
     def chk_key_door(self):
         if self.has_key:
