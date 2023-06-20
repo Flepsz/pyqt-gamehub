@@ -42,7 +42,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="totunnelBtn_2">
+   <widget class="QPushButton" name="toexitBtn">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -68,6 +68,25 @@
       <y>180</y>
       <width>51</width>
       <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="backBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>361</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="cursor">
