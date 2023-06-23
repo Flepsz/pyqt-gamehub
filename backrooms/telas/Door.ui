@@ -81,9 +81,36 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QPushButton" name="topasswordBtn">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
    <zorder>label</zorder>
    <zorder>arrowlb</zorder>
    <zorder>backBtn</zorder>
+   <zorder>topasswordBtn</zorder>
   </widget>
  </widget>
  <resources/>
